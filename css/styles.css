@@ -1,0 +1,92 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.page-content {
+  padding-top: 2em;
+}
+
+.container {
+  position: absolute;
+  z-index: 2;
+  top: 300px;
+  left: 500px;
+  margin: 0px auto;
+  height: 200px;
+  background-color: #000000;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+
+
+.parallax {
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+}
+
+
+.my-container {
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+    height: 1280px;
+}
+/* You could use :after - it doesn't really matter */
+.my-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url(../images/DeathtoStock_Lonely_Commute-01-1920w.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+}
+
+
+@media only screen and (max-width: 361px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+  
+}
