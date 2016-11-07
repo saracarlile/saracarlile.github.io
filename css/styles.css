@@ -13,7 +13,7 @@ body {
   padding-top: 2em;
 }
 
-.container {
+.sub-container {
   position: absolute;
   z-index: 2;
   top: 200px;
@@ -79,7 +79,7 @@ h1 {
 
 
 @media only screen and (max-width: 420px) {
-  .container {
+  .sub-container {
    top: 0px;
   left: 0px;
 }
@@ -95,7 +95,7 @@ h1 {
 
 
 @media only screen and (max-width: 361px) {
-  .container {
+  .sub-container {
    top: 0px;
   left: 0px;
 }
@@ -108,7 +108,7 @@ h1 {
 }
 
 @media only screen and (max-width: 320px) {
-  .container {
+  .sub-container {
  top: 0px;
   left: 0px;
 }
