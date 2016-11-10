@@ -9,7 +9,7 @@ body {
   font-weight: 300;
 }
 
-.page-content {
+.header-content {
   padding-top: 2em;
 }
 
@@ -46,14 +46,14 @@ h1 {
 }
 
 
-.my-container {
+.top-container {
     position: relative;
     background: #5C97FF;
     overflow: hidden;
     height: 640px;
 }
 /* You could use :after - it doesn't really matter */
-.my-container:before {
+.top-container:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -87,7 +87,7 @@ h1 {
   left: 0px;
 }
 
-.my-container:before {
+.top-container:before {
   background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
 
 }
@@ -99,10 +99,10 @@ h1 {
 
 @media only screen and (max-width: 361px) {
   .sub-container {
-   top: 0px;
+
   left: 0px;
 }
-.my-container:before {
+.top-container:before {
   background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
 
 }
@@ -112,10 +112,10 @@ h1 {
 
 @media only screen and (max-width: 320px) {
   .sub-container {
- top: 0px;
+
   left: 0px;
 }
-.my-container:before {
+.top-container:before {
   background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
 
 }
