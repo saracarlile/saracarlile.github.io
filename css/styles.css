@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-weight: 300;
 }
 
@@ -19,15 +19,22 @@ body {
   top: 200px;
   left: 500px;
   margin: 0px auto;
-  height: 200px;
+  height: 250px;
   background-color: #000000;
   color: white;
 }
 
+
+
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
   font-size: 2.5em;
+  margin: 50px 70px;
+}
+
+.h-head {
+  color: grey;
+  font-weight: 200;
+  margin: 50px 70px;
 }
 
 .flexcontainer {
@@ -45,6 +52,9 @@ h1 {
     overflow: hidden;
 }
 
+section {
+   margin-bottom: 50px;
+}
 
 .top-container {
     position: relative;
@@ -78,46 +88,63 @@ h1 {
   margin-bottom: 0px;
 
 }
+p {
 
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 1.25rem;
+    margin: 0 auto 1.875rem;
+    font-size: 1.2em;
+    line-height: 2;
+    letter-spacing: .01rem;
+}
 
+.navbar-inverse .navbar-nav>li>a {
+  font-size: 1.3em;
+}
+
+.navbar-inverse .navbar-brand {
+  font-size: 1.5em;
+}
+
+.fa {
+  font-size: 1.5em;
+}
 
 @media only screen and (max-width: 420px) {
-  .sub-container {
-   top: 0px;
-  left: 0px;
-}
+      .sub-container {
+      top: 50px;
+      left: 0px;
+    }
 
-.top-container:before {
-  background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
-
-}
-
-
-
+    .top-container:before {
+      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+    }
 }
 
 
 @media only screen and (max-width: 361px) {
-  .sub-container {
+      .sub-container {
 
-  left: 0px;
-}
-.top-container:before {
-  background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+      left: 0px;
+    }
+    .top-container:before {
+      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
 
-}
-
-
+    }
 }
 
 @media only screen and (max-width: 320px) {
-  .sub-container {
+    .sub-container {
 
-  left: 0px;
-}
-.top-container:before {
-  background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+      left: 0px;
+    }
+    .top-container:before {
+      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
 
-}
-  
+    }
 }
