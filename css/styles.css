@@ -162,6 +162,9 @@ p {
       background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg); 
       background-attachment: local;
     }
+     .top-container {
+    height: 400px;
+}
 
     .middle-container {
     height: 214px;
