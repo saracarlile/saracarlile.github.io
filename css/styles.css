@@ -160,6 +160,8 @@ p {
 
     .top-container:before {
       background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+      background-position: center;
+      background-size: contain;
     }
 
     .middle-container {
