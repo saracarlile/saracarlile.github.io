@@ -159,8 +159,8 @@ p {
     }
 
     .top-container:before {
-      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
-      
+      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg); 
+      background-attachment: local;
     }
 
     .middle-container {
