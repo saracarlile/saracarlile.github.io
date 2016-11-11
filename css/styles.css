@@ -92,6 +92,35 @@ section {
     background-size: cover;
 }
 
+.middle-container {
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+    height: 370px;
+}
+/* You could use :after - it doesn't really matter */
+.middle-container::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w960.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
 .navbar {
   margin-bottom: 0px;
 
@@ -132,6 +161,15 @@ p {
     .top-container:before {
       background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
     }
+
+    .middle-container {
+    height: 214px;
+}
+/* You could use :after - it doesn't really matter */
+.middle-container::before {  
+    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
+}
+
 }
 
 
@@ -142,8 +180,14 @@ p {
     }
     .top-container:before {
       background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
-
     }
+      .middle-container {
+    height: 214px;
+}
+/* You could use :after - it doesn't really matter */
+.middle-container::before {  
+    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
+}
 }
 
 @media only screen and (max-width: 320px) {
@@ -152,7 +196,14 @@ p {
       left: 0px;
     }
     .top-container:before {
-      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+      background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
 
     }
+      .middle-container {
+    height: 214px;
+}
+/* You could use :after - it doesn't really matter */
+.middle-container::before {  
+    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
+}
 }
