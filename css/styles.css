@@ -160,8 +160,7 @@ p {
 
     .top-container:before {
       background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
-      background-position: center;
-      background-size: contain;
+      
     }
 
     .middle-container {
@@ -170,6 +169,7 @@ p {
 /* You could use :after - it doesn't really matter */
 .middle-container::before {  
     background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
+    background-attachment: local;
 }
 
 }
