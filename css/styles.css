@@ -24,8 +24,6 @@ body {
   color: white;
 }
 
-
-
 h1 {
   font-size: 2.5em;
   margin: 50px 70px;
@@ -44,100 +42,102 @@ h1 {
   flex-direction: row;
 }
 
-
 .parallax {
-    position: relative;
-    background: #5C97FF;
-    overflow: hidden;
+  position: relative;
+  background: #5C97FF;
+  overflow: hidden;
 }
 
 section {
-   margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .sub-heads::after {
-    content: ' ';
-    display: block;
-    width: 50px;
-    margin: 10px 25px;
-    border: 2px solid #3295be;
+  content: ' ';
+  display: block;
+  width: 50px;
+  margin: 10px 25px;
+  border: 2px solid #3295be;
 }
-
 
 .top-container {
-    position: relative;
-    background: #5C97FF;
-    overflow: hidden;
-    height: 640px;
+  position: relative;
+  background: #5C97FF;
+  overflow: hidden;
+  height: 640px;
 }
+
+
 /* You could use :after - it doesn't really matter */
+
 .top-container::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url(../images/DeathtoStock_Lonely_Commute-01-960w.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(../images/DeathtoStock_Lonely_Commute-01-960w.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .middle-container {
-    position: relative;
-    background: #5C97FF;
-    overflow: hidden;
-    height: 370px;
-}
-/* You could use :after - it doesn't really matter */
-.middle-container::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w960.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+  position: relative;
+  background: #5C97FF;
+  overflow: hidden;
+  height: 370px;
 }
 
+
+/* You could use :after - it doesn't really matter */
+
+.middle-container::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(../images/DeathtoStock_Lonely_Commute-08-w960.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 
 .navbar {
   margin-bottom: 0px;
-
 }
-p {
 
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    padding: 0 1.25rem;
-    margin: 0 auto 1.875rem;
-    font-size: 1.2em;
-    line-height: 2;
-    letter-spacing: .01rem;
+p {
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0 1.25rem;
+  margin: 0 auto 1.875rem;
+  font-size: 1.2em;
+  line-height: 2;
+  letter-spacing: .01rem;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -153,62 +153,59 @@ p {
 }
 
 @media only screen and (max-width: 420px) {
-      .sub-container {
-      top: 50px;
-      left: 0px;
-    }
-
-    .top-container:before {
-      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg); 
-      background-attachment: local;
-    }
-     .top-container {
+  .sub-container {
+    top: 50px;
+    left: 0px;
+  }
+  .top-container:before {
+    background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+    background-attachment: local;
+  }
+  .top-container {
     height: 400px;
-}
-
-    .middle-container {
+  }
+  .middle-container {
     height: 214px;
-}
-/* You could use :after - it doesn't really matter */
-.middle-container::before {  
+  }
+  /* You could use :after - it doesn't really matter */
+  .middle-container::before {
     background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
     background-attachment: local;
+  }
 }
-
-}
-
 
 @media only screen and (max-width: 361px) {
-      .sub-container {
-
-      left: 0px;
-    }
-    .top-container:before {
-      background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
-    }
-      .middle-container {
+  .sub-container {
+    left: 0px;
+  }
+  .top-container:before {
+    background-image: url(../images/DeathtoStock_Lonely_Commute-01-480w.jpg);
+    background-attachment: local;
+  }
+  .middle-container {
     height: 214px;
-}
-/* You could use :after - it doesn't really matter */
-.middle-container::before {  
+  }
+  /* You could use :after - it doesn't really matter */
+  .middle-container::before {
     background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
-}
+    background-attachment: local;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    .sub-container {
-
-      left: 0px;
-    }
-    .top-container:before {
-      background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
-
-    }
-      .middle-container {
-    height: 214px;
-}
-/* You could use :after - it doesn't really matter */
-.middle-container::before {  
+  .sub-container {
+    left: 0px;
+  }
+  .top-container:before {
     background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
-}
+    background-attachment: local;
+  }
+  .middle-container {
+    height: 214px;
+  }
+  /* You could use :after - it doesn't really matter */
+  .middle-container::before {
+    background-image: url(../images/DeathtoStock_Lonely_Commute-08-w480.jpg);
+    background-attachment: local;
+  }
 }
