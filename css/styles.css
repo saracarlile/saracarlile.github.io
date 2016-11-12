@@ -133,11 +133,11 @@ p {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  padding: 0 1.25rem;
+  padding: 0 1.375rem;
   margin: 0 auto 1.875rem;
   font-size: 1.2em;
   line-height: 2;
-  letter-spacing: .01rem;
+  letter-spacing: .03rem;
 }
 
 .navbar-inverse .navbar-nav>li>a {
