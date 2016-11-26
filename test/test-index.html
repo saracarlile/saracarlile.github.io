@@ -3,67 +3,73 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal Page</title>
-	<link rel="icon" href="../../favicon.ico">
-	<meta name="Portfolio Project" content="Portfolio Page">
-	<meta name="Sara C" content="Portfolio Page">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Page</title>
+    <meta name="Portfolio Project" content="Portfolio Page">
+    <meta name="Sara C" content="Portfolio Page">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
-
         section {
             padding-top: 200px;
         }
     </style>
 
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     https://saracarlile.github.io/test/test-index.html
   <![endif]-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("user_Edy3a82la1YY7iDR2GX39");
+   })();
+</script>
 </head>
 
 <body>
 
 
-	<section class="row" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-2">
+    <section class="row" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2">
 
-				</div>
-				<div class="col-sm-12 col-md-10">
+                </div>
+                <div class="col-sm-12 col-md-10">
 
-					<div class="well">
-						<form>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Your email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-								<label for="exampleInputSubject">Subject</label>
-								<input type="email" class="form-control" id="exampleInputSubject" placeholder="Subject">
-								<label for="exampleInputMesssage">Message</label>
-								<textarea class="form-control" id="exampleInputMesssage" rows="3" placeholder="Write your message here"></textarea>
-								<div class="form-group">
-									<button type="submit" class="btn btn-default">Submit</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                    <div class="well">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Your email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                <label for="exampleInputSubject">Subject</label>
+                                <input type="email" class="form-control" id="exampleInputSubject" placeholder="Subject">
+                                <label for="exampleInputMesssage">Message</label>
+                                <textarea class="form-control" id="exampleInputMesssage" rows="3" placeholder="Write your message here"></textarea>
+                                <div class="form-group">
+                                    <button type="submit" id="submit-btn" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
 
 
+    <script type='application/javascript' src="../js/vendor/jquery-3.1.1.min.js"></script>
+    <script type='application/javascript' src='../js/vendor/bootstrap.min.js'></script>
+  <script type='application/javascript' src="../js/scripts.js"></script> 
 
-
-	<script type='application/javascript' src="../js/vendor/jquery-3.1.1.min.js"></script>
-	<script type='application/javascript' src='../js/vendor/bootstrap.min.js'></script>
-	<script type='application/javascript' src="../js/scripts.js"></script>
+    
 </body>
 
 </html>
