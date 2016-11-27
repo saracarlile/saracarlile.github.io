@@ -58,6 +58,8 @@ $(document).ready(function () {
         }
         var result = validate();
         if (result) {
+             $('.alert').text('Sending email....please wait for confirmation.');
+             $('.alert').show();
             emailjs.send('gmail', 'template_wyC99JVG', {
                 sender: senderEmail,
                 name: senderName,
@@ -68,7 +70,6 @@ $(document).ready(function () {
                 function (response) {
                     //      console.log('SUCCESS', response);
                     $('.alert').text('Message sent!');
-                    $('.alert').show();
                 },
                 function (error) {
                     //       console.log('FAILED', error);
