@@ -2,20 +2,10 @@ $(document).ready(function () {
     $('#submit-btn').click(function (e) {
         e.preventDefault();  //prevent page reload
         $('.alert').hide();
-        /*      emailjs.send('gmail', 'template_wyC99JVG', {
-                  name: "James",
-                  notes: "Check this out!"
-              })
-                  .then(
-                  function (response) {
-                      console.log('SUCCESS', response);
-                  },
-                  function (error) {
-                      console.log('FAILED', error);
-                  }
-                  ); */
+
 
         var senderEmail = document.getElementById("senderEmail").value;
+        var senderName = document.getElementById("senderName").value;
         var senderSubject = document.getElementById("senderSubject").value;
         var senderMessage = document.getElementById("senderInputMessage").value;
         console.log(senderEmail, senderSubject, senderMessage);
@@ -25,13 +15,21 @@ $(document).ready(function () {
             var count = 0;
             if (emailRegEx.test(senderEmail)) {  //validate email address
                 count += 1;
-                console.log('valid');
             }
             else {
                 $('.alert').text('Please enter a valid email address.');
                 $('.alert').show();
                 $('#senderEmail').focus();
                 return false;
+            }
+            if (senderName === "") {
+                $('.alert').text('Please enter your name.');
+                $('.alert').show();
+                $('#senderName').focus();
+                return false;
+            }
+            else {
+                count += 1;
             }
             if (senderSubject === "") {
                 $('.alert').text('Please enter a subject for your message.');
@@ -51,7 +49,7 @@ $(document).ready(function () {
             else {
                 count += 1;
             }
-            if (count === 3) {
+            if (count === 4) {
                 return true;
             }
             else {
@@ -59,25 +57,28 @@ $(document).ready(function () {
             }
         }
         var result = validate();
-        console.log(result);
         if (result) {
-            console.log("send email!");
-            /*      emailjs.send('gmail', 'template_wyC99JVG', {
-                        sender: senderEmail,
-                        subject: senderSubject,
-                        message: senderMessage
-                    })
-                        .then(
-                        function (response) {
-                            console.log('SUCCESS', response);
-                        },
-                        function (error) {
-                            console.log('FAILED', error);
-                        }
-                        ); */
-                        $('#contactForm').each(function(){
-                            this.reset();
-                        });
+            emailjs.send('gmail', 'template_wyC99JVG', {
+                sender: senderEmail,
+                name: senderName,
+                subject: senderSubject,
+                message: senderMessage
+            })
+                .then(
+                function (response) {
+                    //      console.log('SUCCESS', response);
+                    $('.alert').text('Message sent!');
+                    $('.alert').show();
+                },
+                function (error) {
+                    //       console.log('FAILED', error);
+                    $('.alert').text('Message failed!  ' + error);
+                    $('.alert').show();
+                }
+                );
+            $('#contactForm').each(function () {
+                this.reset();
+            });
         }
 
     });
