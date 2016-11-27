@@ -1,9 +1,8 @@
 $(document).ready(function () {
+
     $('#submit-btn').click(function (e) {
         e.preventDefault();  //prevent page reload
         $('.alert').hide();
-
-
         var senderEmail = document.getElementById("senderEmail").value;
         var senderName = document.getElementById("senderName").value;
         var senderSubject = document.getElementById("senderSubject").value;
@@ -55,7 +54,9 @@ $(document).ready(function () {
                 return false;
             }
         }
-        var result = validate();
+
+        var result = validate();  //returns true if contact from validation passed
+
         if (result) {
              $('.alert').text('Sending email....please wait for confirmation.');
              $('.alert').show();
@@ -80,7 +81,6 @@ $(document).ready(function () {
                 this.reset();
             });
         }
-
     });
 
 
