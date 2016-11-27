@@ -43,7 +43,7 @@ $(document).ready(function () {
             if (senderMessage === "") {
                 $('.alert').text('Please enter text for your message.');
                 $('.alert').show();
-                $('#senderMessage').focus();
+                $('#senderInputMessage').focus();
                 return false;
             }
             else {
