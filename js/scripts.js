@@ -8,7 +8,6 @@ $(document).ready(function () {
         var senderName = document.getElementById("senderName").value;
         var senderSubject = document.getElementById("senderSubject").value;
         var senderMessage = document.getElementById("senderInputMessage").value;
-        console.log(senderEmail, senderSubject, senderMessage);
         var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
         function validate() {
